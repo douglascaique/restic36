@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuidados Pessoais</title>
+    <link rel="stylesheet" href="/Unidade5/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu">
+                <li><a href="/Unidade5/index.html">Início</a></li>
+                <li><a href="/Unidade5/index.html#alimentacao">Alimentação</a></li>
+                <li><a href="/Unidade5/index.html#exercicios">Exercícios</a></li>
+                <li><a href="/Unidade5/index.html#saude-mental">Saúde Mental</a></li>
+                <li><a href="/Unidade5/index.html#dicas">Dicas de Rotina</a></li>
+                <li><a href="/Unidade5/paginas/imc.html">Calculadora de IMC</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <!-- IMC -->
+        <section id="calculadora-imc">
+            <h2>Calculadora de IMC</h2>
+            <form id="imc-form">
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" required>
+                <label for="altura">Altura (m):</label>
+                <input type="number" id="altura" step="0.01" required>
+                <button type="submit">Calcular IMC</button>
+            </form>
+
+
+            <!-- Resultado do IMC -->
+            <div id="resultado-imc"></div>
+        
+        </section>
+    </main>
+    <script src="/Unidade5/script.js"></script>
+</body>
+</html>
