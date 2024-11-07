@@ -1,0 +1,12 @@
+<header>
+    <mat-toolbar class="cabecalho">
+      <h1>Lista de Compras</h1>
+      <ng-container *ngIf="authService.isAuthenticated$ | async; else loggedOut">
+        <button (click)="logout()">Logout</button>
+      </ng-container>
+      <ng-template #loggedOut>
+        <button (click)="login()">Login</button>
+      </ng-template>
+    </mat-toolbar>
+  </header>
+  

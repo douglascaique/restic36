@@ -1,0 +1,13 @@
+<div>
+    <h2>Lista de Tarefas</h2>
+    <input #taskTitle type="text" placeholder="Nova tarefa">
+    <button (click)="addTask(taskTitle.value); taskTitle.value=''">Adicionar</button>
+    <ul>
+      <li *ngFor="let tarefa of tarefas">
+        <input type="checkbox" [checked]="tarefa.included" (click)="updateTaskStatus(tarefa.id)">
+        {{ tarefa.title }}
+        <button (click)="deleteTask(tarefa.id)">Deletar</button>
+      </li>
+    </ul>
+  </div>
+  

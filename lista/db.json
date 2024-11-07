@@ -1,0 +1,21 @@
+{
+  "users": [
+    { "id": 1, "name": "Cleber", "email": "cleber@github.com" },
+    { "id": 2, "name": "Lucas", "email": "lucas@exemplo.com" },
+    { "id": 3, "name": "Douglas", "email": "douglascaique@hotmail.com" }
+  ],
+  "shopping-list": [
+    {
+      "id": 1,
+      "title": "Planejar reunião semanal",
+      "userId": 2,
+      "included": false
+    },
+    {
+      "id": 2,
+      "title": "Revisar proposta de orçamento",
+      "userId": 1,
+      "included": false
+    }
+  ]
+}
